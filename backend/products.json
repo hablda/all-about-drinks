@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Green Tea (Maofeng)",
+    "number": "638759",
+    "description": "One of the most famous tea from China, the Maofeng is harvested in Spring from the most delicate of tea leaves (one bud and one-two leaves, 一芽二叶). Slowly dried over charcoal, the Maofeng retains the elegance of a green tea while displaying subtle orchid and chestnut aftertaste.",
+    "image": {
+      "url": "img/drink01",
+      "alt": "Green Tea (Maofeng)",
+      "title": "Green Tea (Maofeng)"
+    },
+    "price": 23.99,
+    "tags": "cold, rainy"
+  },
+  {
+    "id": 2,
+    "name": "Jamaica Blue Mountain Coffee",
+    "number": "685369",
+    "description": "Jamaica Blue Mountain Coffee is a single origin specialty grade premium coffee beans from Blue Mountain region in Jamaica. This coffee is medium dark roasted with low acidity. Rich body with dark chocolate, peanut butter flavour and caramel, toffee aroma.",
+    "image": {
+      "url": "img/drink02",
+      "alt": "Jamaica Blue Mountain Coffee",
+      "title": "Jamaica Blue Mountain Coffee"
+    },
+    "price": 54.99,
+    "tags": "early, cold"
+  },
+  {
+    "id": 3,
+    "name": "Iced Tea Peach",
+    "number": "662229",
+    "description": "Iced tea is traditionally served with lemon slice used as a garnish, which is often placed on the rim of the glass. This Iced Tea Peach will bring you refreshment on hot summer days.",
+    "image": {
+      "url": "img/drink03",
+      "alt": "Iced Tea Peach",
+      "title": "Iced Tea Peach"
+    },
+    "price": 9.99,
+    "tags": "hot, sunny"
+  },
+  {
+    "id": 4,
+    "name": "Latte Machiatto",
+    "number": "608169",
+    "description": "The coffee choice for an incomparable latte macchiato in top quality. Directly importet from India, with intense and balanced with, a sweet fullness and a spicy body, this coffee drink makes you start your day right",
+    "image": {
+      "url": "img/drink05",
+      "alt": "Latte Machiatto",
+      "title": "Latte Machiatto"
+    },
+    "price": 19.99,
+    "tags": "early, sunny"
+  },
+  {
+    "id": 5,
+    "name": "Vanilla Chai",
+    "number": "608169",
+    "description": "Chai-Latte is a hot drink made from black tea and frothed milk - here in the variation with vanilla flavor and the spices anise, cinnamon and fennel. The powder makes it quick and tasty to enjoy.",
+    "image": {
+      "url": "img/drink05",
+      "alt": "Vanilla Chai Powder",
+      "title": "Vanilla Chai Powder"
+    },
+    "price": 14.99,
+    "tags": "cold, rainy"
+  }
+]
