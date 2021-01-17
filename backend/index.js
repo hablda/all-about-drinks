@@ -5,7 +5,7 @@ const port = 3003;
 const data = require("./products.json");
 
 app.get("/products", (req, res) => {
-  res.send(data);
+  res.json(data);
 });
 
 app.listen(port, () => {
