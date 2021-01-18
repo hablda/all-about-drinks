@@ -8,13 +8,17 @@ const breakpoints = {
 const base = 8;
 
 export const theme = {
-  fontSizes: {
-    small: '1em',
-    medium: '1.5em',
-    large: '2em',
-    xLarge: '3em',
+  font: {
+    headline: '"Bodoni Moda", serif',
+    text: '"Raleway", Open Sans, sans-serif',
   },
-  colors: {
+  fontSize: {
+    s: '1em',
+    m: '1.5em',
+    l: '2em',
+    xl: '3em',
+  },
+  color: {
     primary: '#011B51',
     secondary: '#000512',
     white: '#FFF',
@@ -22,13 +26,13 @@ export const theme = {
     grey: '#444',
     dark: '#222',
   },
-  breakpoints: {
+  breakpoint: {
     xs: `(min-width: ${breakpoints.xs})`,
     s: `(min-width: ${breakpoints.s})`,
     m: `(min-width: ${breakpoints.m})`,
     l: `(min-width: ${breakpoints.l})`,
   },
-  spacings: {
+  spacing: {
     xs: `${base / 2}px `,
     s: `${base}px`,
     m: `${base * 1.5}px`,
