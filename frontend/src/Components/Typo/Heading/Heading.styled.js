@@ -5,7 +5,7 @@ export const H1Styled = styled.h1(({ theme, margin }) => {
   return css`
     font-family: ${font.headline};
     font-size: ${fontSize.l};
-    margin: ${margin ? `0 0 ${spacing.l}` : null};
+    margin: ${margin ? `${spacing.l}` : null};
     text-transform: uppercase;
 
     @media ${breakpoint.s} {
@@ -19,7 +19,7 @@ export const H2Styled = styled.h2(({ theme, margin }) => {
   return css`
     font-family: ${font.headline};
     font-size: ${fontSize.l};
-    margin: ${margin ? `0 0 ${spacing.l}` : null};
+    margin: ${margin ? `${spacing.l}` : null};
     text-transform: uppercase;
   `;
 });
@@ -29,7 +29,7 @@ export const H3Styled = styled.h3(({ theme, margin }) => {
   return css`
     font-family: ${font.headline};
     font-size: ${fontSize.m};
-    margin: ${margin ? `0 0 ${spacing.l}` : null};
+    margin: ${margin ? `${spacing.l}` : null};
     text-transform: uppercase;
   `;
 });
