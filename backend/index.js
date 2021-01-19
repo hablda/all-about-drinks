@@ -1,10 +1,13 @@
-const express = require("express");
+const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = 3003;
+const port = 8000;
 
-const data = require("./products.json");
+const data = require('./products.json');
 
-app.get("/products", (req, res) => {
+app.use(cors());
+
+app.get('/products', (req, res, next) => {
   res.json(data);
 });
 
