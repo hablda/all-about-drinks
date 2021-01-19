@@ -5,7 +5,7 @@
     "number": "638759",
     "description": "One of the most famous tea from China, the Maofeng is harvested in Spring from the most delicate of tea leaves (one bud and one-two leaves, 一芽二叶). Slowly dried over charcoal, the Maofeng retains the elegance of a green tea while displaying subtle orchid and chestnut aftertaste.",
     "image": {
-      "url": "img/drink01",
+      "url": "img/drink01.jpg",
       "alt": "Green Tea (Maofeng)",
       "title": "Green Tea (Maofeng)"
     },
@@ -18,7 +18,7 @@
     "number": "685369",
     "description": "Jamaica Blue Mountain Coffee is a single origin specialty grade premium coffee beans from Blue Mountain region in Jamaica. This coffee is medium dark roasted with low acidity. Rich body with dark chocolate, peanut butter flavour and caramel, toffee aroma.",
     "image": {
-      "url": "img/drink02",
+      "url": "img/drink02.jpg",
       "alt": "Jamaica Blue Mountain Coffee",
       "title": "Jamaica Blue Mountain Coffee"
     },
@@ -31,7 +31,7 @@
     "number": "662229",
     "description": "Iced tea is traditionally served with lemon slice used as a garnish, which is often placed on the rim of the glass. This Iced Tea Peach will bring you refreshment on hot summer days.",
     "image": {
-      "url": "img/drink03",
+      "url": "img/drink03.jpg",
       "alt": "Iced Tea Peach",
       "title": "Iced Tea Peach"
     },
@@ -44,7 +44,7 @@
     "number": "608169",
     "description": "The coffee choice for an incomparable latte macchiato in top quality. Directly importet from India, with intense and balanced with, a sweet fullness and a spicy body, this coffee drink makes you start your day right",
     "image": {
-      "url": "img/drink05",
+      "url": "img/drink04.jpg",
       "alt": "Latte Machiatto",
       "title": "Latte Machiatto"
     },
@@ -57,7 +57,7 @@
     "number": "608169",
     "description": "Chai-Latte is a hot drink made from black tea and frothed milk - here in the variation with vanilla flavor and the spices anise, cinnamon and fennel. The powder makes it quick and tasty to enjoy.",
     "image": {
-      "url": "img/drink05",
+      "url": "img/drink05.jpg",
       "alt": "Vanilla Chai Powder",
       "title": "Vanilla Chai Powder"
     },
