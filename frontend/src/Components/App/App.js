@@ -1,45 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import AppStyled from './App.styled';
+import { Header } from '../Header';
+import { Heading } from '../Typo/Heading';
+import { ProductList } from '../ProductList';
+import { Wrapper } from '../Wrapper';
 
-function App() {
+export const App = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetch('http://localhost:8000/products/')
+        .then((response) => response.json())
+        .then((data) => {
+          setProducts(data);
+          console.log(data);
+        });
+    };
+    fetchData();
+  }, []);
+
   return (
     <AppStyled>
-      <header>
-        <img
-          src="https://via.placeholder.com/150/FFFFFF/444444/?text=LOGO"
-          alt="All about drinks Logo"
-          title="All about drinks Logo"
-        />
-        <h1>All about drinks</h1>
-        <ul>
-          <li>Products</li>
-          <li>Contact</li>
-          <li>About this website</li>
-        </ul>
-      </header>
-      <section>
-        <h3>Products</h3>
-        <div>
-          <img
-            src="https://via.placeholder.com/400/DDDDDD/333333/?text=PRODUKT"
-            alt="Irgendwas"
-            title="Irgendwas"
-          />
-          <p>Article No.: 696969</p>
-          <h2>Irgendein Kaffee</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-            suscipit autem explicabo eum, repudiandae praesentium alias earum
-            non quia reiciendis maiores molestiae deleniti doloremque. Quasi
-            ullam fuga expedita id dignissimos?
-          </p>
-          <p>
-            Preis <span>69.99$</span>
-          </p>
-        </div>
-      </section>
+      <Header />
+      <Wrapper>
+        {/* <Filter></Filter> */}
+        <Heading tag="h3">Products</Heading>
+        <ProductList products={products}></ProductList>
+      </Wrapper>
     </AppStyled>
   );
-}
-
-export default App;
+};
