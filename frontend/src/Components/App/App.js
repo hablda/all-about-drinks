@@ -5,31 +5,41 @@ import { Heading } from '../Typo/Heading';
 import { ProductList } from '../ProductList';
 import { Wrapper } from '../Wrapper';
 import { SearchBar } from '../SearchBar';
+import { fetchData } from '../../services/product.js';
 
 export const App = () => {
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [search, setSearch] = useState('');
+
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      await fetch('http://localhost:8000/products/')
-        .then((response) => response.json())
-        .then((data) => {
-          setProducts(data);
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-        });
-    };
-    fetchData();
+    fetchData().then((items) => {
+      setProducts(items);
+      setFilteredProducts(items);
+    });
   }, []);
+
+  useEffect(() => {
+    const result = products.filter((product) =>
+      product.name.toLowerCase().includes(search.toLowerCase())
+    );
+    setFilteredProducts(result);
+  }, [search, products]);
 
   return (
     <AppStyled>
       <Header />
-      <Wrapper>
-        <SearchBar></SearchBar>
+      <Wrapper center>
+        <SearchBar
+          type="text"
+          placeholder="Search product"
+          onChange={handleChange}></SearchBar>
         <Heading tag="h3">Products</Heading>
-        <ProductList products={products}></ProductList>
+        <ProductList products={filteredProducts}></ProductList>
       </Wrapper>
     </AppStyled>
   );
