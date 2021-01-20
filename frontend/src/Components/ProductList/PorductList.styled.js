@@ -5,6 +5,6 @@ export const StyledProductList = styled.section(({ theme }) => {
   return css`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   `;
 });

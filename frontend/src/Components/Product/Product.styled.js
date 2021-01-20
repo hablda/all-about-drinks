@@ -16,11 +16,7 @@ export const StyledProduct = styled.article(({ theme }) => {
     }
 
     @media ${breakpoint.l} {
-      width: calc(25% - ${spacing.m});
-    }
-
-    @media ${breakpoint.xl} {
-      width: calc(20% - ${spacing.m});
+      width: calc(33% - ${spacing.m});
     }
 
     &:hover {
