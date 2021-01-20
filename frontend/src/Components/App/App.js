@@ -4,6 +4,7 @@ import { Header } from '../Header';
 import { Heading } from '../Typo/Heading';
 import { ProductList } from '../ProductList';
 import { Wrapper } from '../Wrapper';
+import { SearchBar } from '../SearchBar';
 
 export const App = () => {
   const [products, setProducts] = useState([]);
@@ -14,7 +15,9 @@ export const App = () => {
         .then((response) => response.json())
         .then((data) => {
           setProducts(data);
-          console.log(data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
         });
     };
     fetchData();
@@ -24,7 +27,7 @@ export const App = () => {
     <AppStyled>
       <Header />
       <Wrapper>
-        {/* <Filter></Filter> */}
+        <SearchBar></SearchBar>
         <Heading tag="h3">Products</Heading>
         <ProductList products={products}></ProductList>
       </Wrapper>

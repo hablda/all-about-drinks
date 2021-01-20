@@ -27,10 +27,10 @@ export const theme = {
     dark: '#222',
   },
   breakpoint: {
-    xs: `(min-width: ${breakpoints.xs})`,
-    s: `(min-width: ${breakpoints.s})`,
-    m: `(min-width: ${breakpoints.m})`,
-    l: `(min-width: ${breakpoints.l})`,
+    s: `(min-width: ${breakpoints.xs})`,
+    m: `(min-width: ${breakpoints.s})`,
+    l: `(min-width: ${breakpoints.m})`,
+    xl: `(min-width: ${breakpoints.l})`,
   },
   spacing: {
     xs: `${base / 2}px `,
