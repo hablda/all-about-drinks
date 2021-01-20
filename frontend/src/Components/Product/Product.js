@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledProduct } from './Product.styled';
+import StyledProduct from './Product.styled';
 import { Heading } from '../Typo/Heading';
 import { Picture } from '../Picture';
 

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const StyledProductList = styled.section(({ theme }) => {
+const StyledProductList = styled.section(({ theme }) => {
   const { spacing } = theme;
   return css`
     display: flex;
@@ -8,3 +8,5 @@ export const StyledProductList = styled.section(({ theme }) => {
     justify-content: space-evenly;
   `;
 });
+
+export default StyledProductList;

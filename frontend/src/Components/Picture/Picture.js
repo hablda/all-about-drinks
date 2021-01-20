@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledPictureContainer } from './Picture.styled';
+import StyledPictureContainer from './Picture.styled';
 
 export const Picture = ({ image, fullwidth, round }) => {
   const imgPath = process.env.PUBLIC_URL + '/' + image.url;

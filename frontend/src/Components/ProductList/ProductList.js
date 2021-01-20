@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledProductList } from './PorductList.styled';
+import StyledProductList from './PorductList.styled';
 import { Product } from '../Product';
 
 export const ProductList = ({ products }) => {

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const StyledProduct = styled.article(({ theme }) => {
+const StyledProduct = styled.article(({ theme }) => {
   const { spacing, color, breakpoint } = theme;
   return css`
     width: 100%;
@@ -25,3 +25,5 @@ export const StyledProduct = styled.article(({ theme }) => {
     }
   `;
 });
+
+export default StyledProduct;
