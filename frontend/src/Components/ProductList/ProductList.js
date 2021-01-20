@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyledProductList } from './PorductList.styled';
 import { Product } from '../Product';
-import { Heading } from '../Typo/Heading';
 
 export const ProductList = ({ products }) => {
   return (

@@ -1,17 +1,17 @@
 import React from 'react';
 import { StyledProduct } from './Product.styled';
 import { Heading } from '../Typo/Heading';
+import { Picture } from '../Picture';
 
 export const Product = ({ product }) => {
-  console.log(product);
-  const imgPath = process.env.PUBLIC_URL + '/' + product.image.url;
+  const { image, number, name, description, price } = product;
   return (
     <StyledProduct>
-      <img src={imgPath} alt={product.image.alt} title={product.image.title} />
-      <p>Article No.: {product.number}</p>
-      <Heading tag="h2">{product.name}</Heading>
-      <p>{product.description}</p>
-      <p>{product.price}</p>
+      <Picture image={image} round fullwidth />
+      <p>Article No.: {number}</p>
+      <Heading tag="h2">{name}</Heading>
+      <p>{description}</p>
+      <p>{price}</p>
     </StyledProduct>
   );
 };
