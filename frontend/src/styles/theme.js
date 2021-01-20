@@ -19,8 +19,8 @@ export const theme = {
     xl: '3em',
   },
   color: {
-    primary: '#011B51',
-    secondary: '#000512',
+    primary: '#896a53',
+    secondary: '#d3a77a',
     white: '#FFF',
     light: '#F2F2F2',
     grey: '#444',
