@@ -1,0 +1,1 @@
+export { Copytext } from './Copytext';
