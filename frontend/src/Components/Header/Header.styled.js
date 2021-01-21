@@ -26,6 +26,7 @@ const StyledHeader = styled.header(({ theme }) => {
       li {
         padding: 0 20px;
         list-style: none;
+        text-decoration: underline;
       }
     }
   `;

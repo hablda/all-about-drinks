@@ -1,8 +1,9 @@
 import React from 'react';
 import StyledHeader from './Header.styled';
 import { Heading } from '../Typo/Heading';
+import { SearchBar } from '../SearchBar';
 
-export const Header = () => {
+export const Header = ({ handleChange }) => {
   return (
     <StyledHeader>
       <img
@@ -18,6 +19,11 @@ export const Header = () => {
         <li>Contact</li>
         <li>About this website</li>
       </ul>
+      <SearchBar
+        type="text"
+        placeholder="Search product"
+        onChange={handleChange}
+      />
     </StyledHeader>
   );
 };

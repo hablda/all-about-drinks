@@ -4,7 +4,6 @@ import { Header } from '../Header';
 import { Heading } from '../Typo/Heading';
 import { ProductList } from '../ProductList';
 import { Wrapper } from '../Wrapper';
-import { SearchBar } from '../SearchBar';
 import { fetchData } from '../../services/product.js';
 
 export const App = () => {
@@ -32,12 +31,8 @@ export const App = () => {
 
   return (
     <AppStyled>
-      <Header />
+      <Header handleChange={handleChange} />
       <Wrapper center>
-        <SearchBar
-          type="text"
-          placeholder="Search product"
-          onChange={handleChange}></SearchBar>
         <Heading tag="h3">Products</Heading>
         <ProductList products={filteredProducts}></ProductList>
       </Wrapper>
