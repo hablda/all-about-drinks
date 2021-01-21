@@ -4,7 +4,7 @@ import StyledSearchBar from './SearchBar.styled';
 export const SearchBar = ({ placeholder, onChange, type }) => {
   return (
     <StyledSearchBar>
-      <input type placeholder={placeholder} onChange={onChange} />
+      <input type={type} placeholder={placeholder} onChange={onChange} />
     </StyledSearchBar>
   );
 };

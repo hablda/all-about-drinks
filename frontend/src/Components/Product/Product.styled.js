@@ -4,12 +4,13 @@ const StyledProduct = styled.article(({ theme }) => {
   const { spacing, color, breakpoint } = theme;
   return css`
     width: 100%;
-    padding: ${spacing.l};
+    padding: ${spacing.l} ${spacing.l} 100px;
     margin: ${spacing.m} 0;
     border-radius: ${spacing.m};
     border: 1px solid ${color.primary};
     box-shadow: 0 0 ${spacing.s} ${color.grey};
     background-color: ${color.light};
+    position: relative;
 
     @media ${breakpoint.m} {
       width: calc(50% - ${spacing.m});
