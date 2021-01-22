@@ -13,6 +13,7 @@ export const theme = {
     text: '"Raleway", Open Sans, sans-serif',
   },
   fontSize: {
+    xs: '0.8em',
     s: '1em',
     m: '1.5em',
     l: '2em',
