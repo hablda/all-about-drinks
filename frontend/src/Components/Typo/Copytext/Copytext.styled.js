@@ -1,17 +1,9 @@
 import styled, { css } from 'styled-components';
 
-export const StyledCopytext = styled.p(({ theme, margin }) => {
-  const { spacing, fontSize, font, breakpoint } = theme;
+export const StyledCopytext = styled.p(({ theme, small }) => {
+  const { spacing, fontSize } = theme;
   return css`
-    font-family: ${font.headline};
-    font-size: ${fontSize.l};
-    margin: ${margin ? `${spacing.l}` : null};
-    text-transform: uppercase;
-
-    @media ${breakpoint.s} {
-      font-size: ${fontSize.xl};
-    }
+    font-size: ${small ? fontSize.xs : fontSize.s};
+    margin: ${spacing.s} 0;
   `;
-});
-
 });
