@@ -33,7 +33,7 @@ export const App = () => {
     <AppStyled>
       <Header handleChange={handleChange} />
       <Wrapper center>
-        <Heading tag="h3">Products</Heading>
+        <Heading tag="h3">Our Products</Heading>
         <ProductList products={filteredProducts}></ProductList>
       </Wrapper>
     </AppStyled>
