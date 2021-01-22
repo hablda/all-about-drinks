@@ -12,5 +12,5 @@ app.get('/products', (req, res, next) => {
 });
 
 app.listen(port, () => {
-  console.log(`Your Backend is running on http://localhost:${port}`);
+  console.log(`Your Backend is running on http://localhost:${port}/products`);
 });
