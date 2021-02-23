@@ -1,13 +1,15 @@
+import { ThemeType } from '../types/theme'
+
 const breakpoints = {
   xs: '576px',
   s: '768px',
   m: '992px',
   l: '1200px',
-};
+}
 
-const base = 8;
+const base = 8
 
-export const theme = {
+export const theme: ThemeType = {
   font: {
     headline: '"Bodoni Moda", serif',
     text: '"Raleway", Open Sans, sans-serif',
@@ -40,4 +42,4 @@ export const theme = {
     l: `${base * 2}px`,
     xl: `${base * 3}px`,
   },
-};
+}
