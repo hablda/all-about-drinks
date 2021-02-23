@@ -1,7 +1,11 @@
 import React from 'react';
 import StyledPrice from './Price.styled';
 
-export const Price = ({ price }) => {
+interface PriceProps {
+  price: number
+}
+
+export const Price: React.FC<PriceProps> = ({ price }) => {
   const splitPrice = () => {
     return price.toString().split('.');
   };
